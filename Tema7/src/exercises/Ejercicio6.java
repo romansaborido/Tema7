@@ -16,7 +16,7 @@ public class Ejercicio6 {
 		String getIdCurso = "SELECT id_curso FROM CURSOS WHERE nombre = 'Matemáticas 1º'";
 
 		// Conectamos con la base de datos
-		try (Connection con = DriverManager.getConnection(Creedenciales.url, Creedenciales.user, Creedenciales.password)) {
+		try (Connection con = DriverManager.getConnection(Creedenciales.URL, Creedenciales.USER, Creedenciales.PASSWORD)) {
 		
 			// Creamos un objeto tipo Statement
 			Statement st = con.createStatement();

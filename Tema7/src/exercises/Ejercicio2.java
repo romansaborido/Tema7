@@ -15,7 +15,7 @@ public class Ejercicio2 {
 		int res;
 		
 		// Conectamos con la base de datos
-		try (Connection con = DriverManager.getConnection(Creedenciales.url, Creedenciales.user, Creedenciales.password)) {
+		try (Connection con = DriverManager.getConnection(Creedenciales.URL, Creedenciales.USER, Creedenciales.PASSWORD)) {
 			
 			// Creamos un statement para trabajar con la BD
 			Statement st = con.createStatement();

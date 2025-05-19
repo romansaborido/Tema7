@@ -18,7 +18,7 @@ public class Ejercicio5 {
 		int[] res;
 		
 		// Conectamos con la base de datos
-		try (Connection con = DriverManager.getConnection(Creedenciales.url, Creedenciales.user, Creedenciales.password)) {
+		try (Connection con = DriverManager.getConnection(Creedenciales.URL, Creedenciales.USER, Creedenciales.PASSWORD)) {
 
 			// Creamos un PreparedStatement
 			PreparedStatement ps = con.prepareStatement(query);

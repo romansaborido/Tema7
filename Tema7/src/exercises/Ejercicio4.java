@@ -18,7 +18,7 @@ public class Ejercicio4 {
 		String query = "INSERT INTO Cursos (nombre, descripcion, año_escolar) VALUES (?, ?, 2025)";
 		
 		// Conectamos con la base de datos
-		try (Connection con = DriverManager.getConnection(Creedenciales.url, Creedenciales.user, Creedenciales.password)) {
+		try (Connection con = DriverManager.getConnection(Creedenciales.URL, Creedenciales.USER, Creedenciales.PASSWORD)) {
 			
 			// Creamos un preparedStatement
 			PreparedStatement ps = con.prepareStatement(query);
